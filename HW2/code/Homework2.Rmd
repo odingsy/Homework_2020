@@ -92,7 +92,7 @@ column: <organism>_<tissue>_<batch> sample identifier (e.g. human_adipose_3)
 ```{r import_piii, include=TRUE, echo=TRUE, eval = TRUE}
 
 # Import processed raw counts
-counts <- readRDS("../data/part3_counts.rds")
+counts <- readRDS("./data/part3_counts.rds")
 
 # Perform a log TPM normalization
 log2tpm <- sapply(1:dim(counts)[2], function(idx){
